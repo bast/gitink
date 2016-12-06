@@ -1,8 +1,7 @@
 [![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
 
 
-gitink
-======
+# gitink
 
 ASCII to SVG Git log graph visualizer.
 Useful for teaching Git.
@@ -24,6 +23,8 @@ c1----c2----m1----c3----c4
 $ python gitink.py history.txt | display
 ```
 
-This produces (display command requires imagemagick):
+This produces (display command requires [imagemagick](https://www.imagemagick.org)):
 
-![alt text](https://github.com/bast/gitink/raw/master/img/history.jpg "Git log graph")
+![alt text](https://github.com/bast/gitink/raw/master/img/history.jpg "Git log graph example")
+
+Contributions are most welcome!
