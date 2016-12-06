@@ -38,6 +38,7 @@ Suggestions:
 - Create a package and split into modules.
 - Disentangle.
 - Simplify.
+- Split long functions into smaller units.
+- Unit test functions.
 - Use named tuples instead of classes.
 - Avoid global variables.
-- Unit test.
