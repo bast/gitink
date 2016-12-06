@@ -313,7 +313,7 @@ def print_svg(history):
     for line in history:
         # we ignore branch pointers here
         for w in re.findall(r'\w+[*]?', re.sub(r"\[.*\]", '', line)):
-            i = string.find(line, w)
+            i = line.find(w)
             j = i + len(w) - 1
             commits_time_order.append((i, w))
             commit_coor[w] = (row, i, j)
@@ -327,7 +327,7 @@ def print_svg(history):
     for line in history:
         # we specifically look for branch names "[branch]"
         for w in re.findall(r'\[(.*?)\]', line):
-            i = string.rfind(line, w)
+            i = line.rfind(w)
             coor_pointer[(row, i)] = w
         row += 1
 
