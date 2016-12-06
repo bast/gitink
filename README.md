@@ -27,4 +27,17 @@ This produces (display command requires [imagemagick](https://www.imagemagick.or
 
 ![alt text](https://github.com/bast/gitink/raw/master/img/history.jpg "Git log graph example")
 
+
+
+## Contributions
+
 Contributions are most welcome!
+
+Suggestions:
+
+- Create a package and split into modules.
+- Disentangle.
+- Simplify.
+- Use named tuples instead of classes.
+- Avoid global variables.
+- Unit test.
