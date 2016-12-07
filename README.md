@@ -8,7 +8,7 @@ Useful for teaching Git.
 Licensed under [BSD-3](../master/LICENSE).
 
 ```shell
-$ cat history.txt
+$ cat example.txt
 
                      [feature]
                       |
@@ -20,12 +20,12 @@ c1----c2----m1----c3----c4
    |           |
   [_branch]   [branch]
 
-$ python gitink.py history.txt | display
+$ python gitink.py example.txt | display
 ```
 
 This produces (display command requires [imagemagick](https://www.imagemagick.org)):
 
-![alt text](https://github.com/bast/gitink/raw/master/img/history.jpg "Git log graph example")
+![alt text](https://github.com/bast/gitink/raw/master/img/example.jpg "Git log graph example")
 
 
 
