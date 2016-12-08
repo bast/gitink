@@ -393,7 +393,10 @@ def print_svg(history):
     print(s_svg)
 
 
-if __name__ == '__main__':
+def main():
     with open(sys.argv[1], 'r') as f:
         history = f.read()
         print_svg(history)
+
+if __name__ == '__main__':
+    main()
