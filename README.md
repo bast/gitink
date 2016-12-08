@@ -28,6 +28,16 @@ This produces (display command requires [imagemagick](https://www.imagemagick.or
 ![alt text](https://github.com/bast/gitink/raw/master/img/example.jpg "Git log graph example")
 
 
+## Installing
+
+As the software is not quite finished it isn't in PyPI yet. You can install it
+with pip by using
+
+```shell
+$ pip install git+https://github.com/bast/gitink@master
+```
+
+Alternately you can replace master with a branch or a tag.
 
 ## Contributions
 
