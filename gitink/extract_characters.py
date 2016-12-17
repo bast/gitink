@@ -1,14 +1,14 @@
-def get_safe_character(s, row, i):
+def get_safe_character(text, row, i):
 
     # return ' ' if we ask for an invalid row
-    if row not in range(len(s)):
+    if row not in range(len(text)):
         return ' '
 
-    # return ' ' if we ask for an invalid character
-    if i not in range(len(s[row])):
+    # return ' ' if we ask for an invalid position in a valid row
+    if i not in range(len(text[row])):
         return ' '
 
-    return s[row][i]
+    return text[row][i]
 
 
 def test_get_safe_character():
@@ -19,5 +19,5 @@ def test_get_safe_character():
     assert get_safe_character(text, 1, 0) == 'd'
     assert get_safe_character(text, -1, 0) == ' ', 'testing invalid row'
     assert get_safe_character(text, 3, 0) == ' ', 'testing invalid row'
-    assert get_safe_character(text, 0, -1) == ' ', 'testing invalid character'
-    assert get_safe_character(text, 0, 3) == ' ', 'testing invalid character'
+    assert get_safe_character(text, 0, -1) == ' ', 'testing position in a valid row'
+    assert get_safe_character(text, 0, 3) == ' ', 'testing position in a valid row'
