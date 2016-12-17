@@ -1,8 +1,3 @@
-import re
-import string
-import sys
-
-
 SCALING = 0.4
 
 
@@ -293,6 +288,7 @@ def get_safe_character(s, row, i):
 
 
 def print_svg(history):
+    import re
 
     history = history.split('\n')
 
@@ -394,6 +390,7 @@ def print_svg(history):
 
 
 def main():
+    import sys
     with open(sys.argv[1], 'r') as f:
         history = f.read()
         print_svg(history)
