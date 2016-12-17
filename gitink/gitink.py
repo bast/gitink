@@ -1,6 +1,3 @@
-SCALING = 0.4
-
-
 # global variables used for trimming the image
 x_min = 1.0e6
 x_max = -1.0e6
@@ -37,7 +34,7 @@ class Arrow:
                 self.y2 = v
                 break
 
-    def svg(self, x_off, y_off):
+    def svg(self, scaling, x_off, y_off):
 
         if self.ghost:
             opacity = 0.3
@@ -51,7 +48,7 @@ class Arrow:
         s.append('   inkscape:groupmode="layer"')
         s.append('   id="layer1">')
         s.append('  <path')
-        s.append('     style="fill:none;stroke:#000000;stroke-width:%f;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:%f;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none"' % (SCALING * 4.0, opacity))
+        s.append('     style="fill:none;stroke:#000000;stroke-width:%f;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:%f;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none"' % (scaling * 4.0, opacity))
         s.append('     d="M %f,%f %f,%f"' % (x_off + self.x1, y_off + self.y1, x_off + self.x2, y_off + self.y2))
         s.append('     id="path2985"')
         s.append('     inkscape:connector-curvature="0" />')
@@ -62,7 +59,7 @@ class Arrow:
 
 class Box:
 
-    def __init__(self, text, x, y, color, rounded=False, ghost=False):
+    def __init__(self, scaling, text, x, y, color, rounded=False, ghost=False):
 
         self.text = text
         self.color = color
@@ -74,14 +71,14 @@ class Box:
         self.box_w = 24.0 * len(text) + 20.0
         self.box_h = 58.0
 
-        self.box_w *= SCALING
-        self.box_h *= SCALING
+        self.box_w *= scaling
+        self.box_h *= scaling
 
         self.box_x = x - 0.5 * self.box_w
         self.box_y = y - 0.5 * self.box_h
 
-        self.text_x = self.box_x + 10.0 * SCALING
-        self.text_y = self.box_y + 42.0 * SCALING
+        self.text_x = self.box_x + 10.0 * scaling
+        self.text_y = self.box_y + 42.0 * scaling
 
         global x_min
         global x_max
@@ -124,7 +121,7 @@ class Box:
 
         return True
 
-    def svg(self, x_off, y_off):
+    def svg(self, scaling, x_off, y_off):
 
         if self.ghost:
             opacity = 0.3
@@ -140,19 +137,19 @@ class Box:
         s.append('   inkscape:groupmode="layer"')
         s.append('   id="layer1">')
         s.append('  <rect')
-        s.append('     style="fill:%s;stroke:%s;stroke-width:%f;stroke-miterlimit:4;stroke-dasharray:none"' % (self.color, stroke_color, SCALING * 4.0))
+        s.append('     style="fill:%s;stroke:%s;stroke-width:%f;stroke-miterlimit:4;stroke-dasharray:none"' % (self.color, stroke_color, scaling * 4.0))
         s.append('     id="rect2989"')
         s.append('     width="%f"' % self.box_w)
         s.append('     height="%f"' % self.box_h)
         s.append('     x="%f"' % (x_off + self.box_x))
         s.append('     y="%f"' % (y_off + self.box_y))
         if self.rounded:
-            s.append('     ry="%f" />' % (SCALING * 8.0))
+            s.append('     ry="%f" />' % (scaling * 8.0))
         else:
             s.append('     ry="%f" />' % 0.0)
         s.append('  <text')
         s.append('     xml:space="preserve"')
-        s.append('     style="font-size:%ipx;font-style:normal;font-weight:normal;line-height:125%%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:%f;stroke:none;font-family:DejaVu Sans Mono"' % (int(SCALING * 40), opacity))
+        s.append('     style="font-size:%ipx;font-style:normal;font-weight:normal;line-height:125%%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:%f;stroke:none;font-family:DejaVu Sans Mono"' % (int(scaling * 40), opacity))
         s.append('     x="%f"' % (x_off + self.text_x))
         s.append('     y="%f"' % (y_off + self.text_y))
         s.append('     id="text2985"')
@@ -207,7 +204,7 @@ def print_head(w, h):
     return '\n'.join(s)
 
 
-def pointer(b, text, position):
+def pointer(scaling, b, text, position):
 
     assert position in ['above', 'below']
 
@@ -219,16 +216,16 @@ def pointer(b, text, position):
     x, y = b.get_center()
 
     if text[0] == '_':
-        p = Box(text[1:], x, y - sign * 100.0 * SCALING, '#ffffff', ghost=True)
+        p = Box(scaling, text[1:], x, y - sign * 100.0 * scaling, '#ffffff', ghost=True)
         a = Arrow(p, b, ghost=True)
     else:
-        p = Box(text, x, y - sign * 100.0 * SCALING, '#dddddd')
+        p = Box(scaling, text, x, y - sign * 100.0 * scaling, '#dddddd')
         a = Arrow(p, b)
 
     return p, a
 
 
-def commit(text, row, parents=[]):
+def commit(scaling, text, row, parents=[]):
 
     color = []
 
@@ -250,15 +247,15 @@ def commit(text, row, parents=[]):
 
     x, y = origin
 
-    y += row * 50.0 * SCALING
+    y += row * 50.0 * scaling
 
     for p in parents:
         p_x, p_y = p.get_center()
-        t = p_x + 150.0 * SCALING
+        t = p_x + 150.0 * scaling
         if t > x:
             x = t
 
-    c = Box(text, x, y, color[row], rounded=True)
+    c = Box(scaling, text, x, y, color[row], rounded=True)
 
     arrows = []
     for p in parents:
@@ -287,7 +284,7 @@ def get_safe_character(s, row, i):
     return s[row][i]
 
 
-def print_svg(history):
+def print_svg(scaling, history):
     import re
 
     history = history.split('\n')
@@ -357,12 +354,12 @@ def print_svg(history):
     for i, c in commits_time_order:
         row = commit_coor[c][0]
         if parents[c] == []:
-            c_dict[c], arrows = commit(c, row)
+            c_dict[c], arrows = commit(scaling, c, row)
         else:
             p = []
             for parent in parents[c]:
                 p.append(c_dict[parent])
-            c_dict[c], arrows = commit(c, row, p)
+            c_dict[c], arrows = commit(scaling, c, row, p)
         all_objects.append(c_dict[c])
         for a in arrows:
             all_objects.append(a)
@@ -370,9 +367,9 @@ def print_svg(history):
             t = []
             for j, w in enumerate(p[0].split(',')):
                 if j == 0:
-                    ptr, a = pointer(c_dict[c], w, p[1])
+                    ptr, a = pointer(scaling, c_dict[c], w, p[1])
                 else:
-                    ptr, a = pointer(t[j - 1], w, p[1])
+                    ptr, a = pointer(scaling, t[j - 1], w, p[1])
                 t.append(ptr)
                 all_objects.append(ptr)
                 all_objects.append(a)
@@ -382,7 +379,7 @@ def print_svg(history):
     for o in all_objects:
         # the +5.0 so that the figure does not start directly at the origin
         # looks better with some offset
-        s_svg += o.svg(-x_min + 5.0, -y_min + 5.0)
+        s_svg += o.svg(scaling, -x_min + 5.0, -y_min + 5.0)
 
     s_svg += '</svg>'
 
@@ -392,8 +389,8 @@ def print_svg(history):
 def main():
     import sys
     with open(sys.argv[1], 'r') as f:
-        history = f.read()
-        print_svg(history)
+        print_svg(scaling=0.4,
+                  history=f.read())
 
 if __name__ == '__main__':
     main()
