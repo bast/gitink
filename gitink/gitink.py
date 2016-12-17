@@ -1,8 +1,15 @@
-# global variables used for trimming the image
-x_min = 1.0e6
-x_max = -1.0e6
-y_min = 1.0e6
-y_max = -1.0e6
+def get_dim(x_min, x_max, y_min, y_max):
+    from collections import namedtuple
+
+    Dimensions = namedtuple('Dimensions',
+                            ['x_min',
+                             'x_max',
+                             'y_min',
+                             'y_max'])
+
+    dim = Dimensions(x_min, x_max, y_min, y_max)
+
+    return dim
 
 
 class Arrow:
@@ -59,7 +66,7 @@ class Arrow:
 
 class Box:
 
-    def __init__(self, scaling, text, x, y, color, rounded=False, ghost=False):
+    def __init__(self, dim, scaling, text, x, y, color, rounded=False, ghost=False):
 
         self.text = text
         self.color = color
@@ -80,24 +87,18 @@ class Box:
         self.text_x = self.box_x + 10.0 * scaling
         self.text_y = self.box_y + 42.0 * scaling
 
-        global x_min
-        global x_max
-        global y_min
-        global y_max
-
+    def update_dim(self, dim):
         x_min_loc = self.box_x
         y_min_loc = self.box_y
         x_max_loc = self.box_x + 2.0 * self.box_w
         y_max_loc = self.box_y + 2.0 * self.box_h
 
-        if x_min_loc < x_min:
-            x_min = x_min_loc
-        if x_max_loc > x_max:
-            x_max = x_max_loc
-        if y_min_loc < y_min:
-            y_min = y_min_loc
-        if y_max_loc > y_max:
-            y_max = y_max_loc
+        x_min_loc = min(x_min_loc, dim.x_min)
+        x_max_loc = max(x_max_loc, dim.x_max)
+        y_min_loc = min(y_min_loc, dim.y_min)
+        y_max_loc = max(y_max_loc, dim.y_max)
+
+        return get_dim(x_min_loc, x_max_loc, y_min_loc, y_max_loc)
 
     def get_center(self):
         return self.center
@@ -204,7 +205,7 @@ def print_head(w, h):
     return '\n'.join(s)
 
 
-def pointer(scaling, b, text, position):
+def pointer(dim, scaling, b, text, position):
 
     assert position in ['above', 'below']
 
@@ -216,16 +217,18 @@ def pointer(scaling, b, text, position):
     x, y = b.get_center()
 
     if text[0] == '_':
-        p = Box(scaling, text[1:], x, y - sign * 100.0 * scaling, '#ffffff', ghost=True)
+        p = Box(dim, scaling, text[1:], x, y - sign * 100.0 * scaling, '#ffffff', ghost=True)
         a = Arrow(p, b, ghost=True)
     else:
-        p = Box(scaling, text, x, y - sign * 100.0 * scaling, '#dddddd')
+        p = Box(dim, scaling, text, x, y - sign * 100.0 * scaling, '#dddddd')
         a = Arrow(p, b)
 
-    return p, a
+    dim = p.update_dim(dim)
+
+    return p, a, dim
 
 
-def commit(scaling, text, row, parents=[]):
+def commit(dim, scaling, text, row, parents=[]):
 
     color = []
 
@@ -255,14 +258,15 @@ def commit(scaling, text, row, parents=[]):
         if t > x:
             x = t
 
-    c = Box(scaling, text, x, y, color[row], rounded=True)
+    c = Box(dim, scaling, text, x, y, color[row], rounded=True)
+    dim = c.update_dim(dim)
 
     arrows = []
     for p in parents:
         a = Arrow(c, p)
         arrows.append(a)
 
-    return c, arrows
+    return c, arrows, dim
 
 
 def get_safe_character(s, row, i):
@@ -284,7 +288,7 @@ def get_safe_character(s, row, i):
     return s[row][i]
 
 
-def print_svg(scaling, history):
+def print_svg(dim, scaling, history):
     import re
 
     history = history.split('\n')
@@ -354,12 +358,12 @@ def print_svg(scaling, history):
     for i, c in commits_time_order:
         row = commit_coor[c][0]
         if parents[c] == []:
-            c_dict[c], arrows = commit(scaling, c, row)
+            c_dict[c], arrows, dim = commit(dim, scaling, c, row)
         else:
             p = []
             for parent in parents[c]:
                 p.append(c_dict[parent])
-            c_dict[c], arrows = commit(scaling, c, row, p)
+            c_dict[c], arrows, dim = commit(dim, scaling, c, row, p)
         all_objects.append(c_dict[c])
         for a in arrows:
             all_objects.append(a)
@@ -367,19 +371,19 @@ def print_svg(scaling, history):
             t = []
             for j, w in enumerate(p[0].split(',')):
                 if j == 0:
-                    ptr, a = pointer(scaling, c_dict[c], w, p[1])
+                    ptr, a, dim = pointer(dim, scaling, c_dict[c], w, p[1])
                 else:
-                    ptr, a = pointer(scaling, t[j - 1], w, p[1])
+                    ptr, a, dim = pointer(dim, scaling, t[j - 1], w, p[1])
                 t.append(ptr)
                 all_objects.append(ptr)
                 all_objects.append(a)
 
-    s_svg = print_head(x_max - x_min, y_max - y_min)
+    s_svg = print_head(dim.x_max - dim.x_min, dim.y_max - dim.y_min)
 
     for o in all_objects:
         # the +5.0 so that the figure does not start directly at the origin
         # looks better with some offset
-        s_svg += o.svg(scaling, -x_min + 5.0, -y_min + 5.0)
+        s_svg += o.svg(scaling, -dim.x_min + 5.0, -dim.y_min + 5.0)
 
     s_svg += '</svg>'
 
@@ -387,9 +391,15 @@ def print_svg(scaling, history):
 
 
 def main():
-    import sys
-    with open(sys.argv[1], 'r') as f:
-        print_svg(scaling=0.4,
+    from sys import float_info, argv
+
+    # holds dimensions used for trimming the image
+    m = float_info.max
+    dim = get_dim(m, -m, m, -m)
+
+    with open(argv[1], 'r') as f:
+        print_svg(dim=dim,
+                  scaling=0.4,
                   history=f.read())
 
 if __name__ == '__main__':
