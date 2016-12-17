@@ -369,7 +369,7 @@ def print_svg(dim, scaling, history):
 
     s_svg += '</svg>'
 
-    print(s_svg)
+    return s_svg
 
 
 def main():
@@ -380,9 +380,10 @@ def main():
     dim = get_dim(m, -m, m, -m)
 
     with open(argv[1], 'r') as f:
-        print_svg(dim=dim,
-                  scaling=0.4,
-                  history=f.read())
+        s_svg = print_svg(dim=dim,
+                          scaling=0.4,
+                          history=f.read())
+        print(s_svg)
 
 if __name__ == '__main__':
     main()
