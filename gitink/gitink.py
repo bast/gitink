@@ -269,27 +269,9 @@ def commit(dim, scaling, text, row, parents=[]):
     return c, arrows, dim
 
 
-def get_safe_character(s, row, i):
-
-    num_rows = len(s)
-
-    # return if row is beyond text
-    if row + 1 > num_rows:
-        return ' '
-
-    # return if i is too small
-    if i < 0:
-        return ' '
-
-    # return if i is too large
-    if i + 1 > len(s[row]):
-        return ' '
-
-    return s[row][i]
-
-
 def print_svg(dim, scaling, history):
     import re
+    from extract_characters import get_safe_character
 
     history = history.split('\n')
 
