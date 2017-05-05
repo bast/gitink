@@ -20,7 +20,7 @@ c1----c2----m1----c3----c4
    |           |
   [_branch]   [branch]
 
-$ python gitink.py example.txt | display
+$ python gitink/gitink.py example.txt | display
 ```
 
 This produces (display command requires [imagemagick](https://www.imagemagick.org)):
