@@ -12,7 +12,7 @@ def get_dim(x_min, x_max, y_min, y_max):
     return dim
 
 
-class Arrow:
+class Line:
 
     def __init__(self, b1, b2, ghost=False):
 
@@ -48,8 +48,24 @@ class Arrow:
         else:
             opacity = 1.0
 
-        s = []
+        return '<line x1="{0}" y1="{1}" x2="{2}" y2="{3}" style="stroke:#000000; stroke-width:{4}; stroke-opacity:{5}" />'.format(x_off + self.x1,
+                                                                                                                                  y_off + self.y1,
+                                                                                                                                  x_off + self.x2,
+                                                                                                                                  y_off + self.y2,
+                                                                                                                                  scaling * 4.0,
+                                                                                                                                  opacity)
 
+
+class Arrow(Line):
+
+    def svg(self, scaling, x_off, y_off):
+
+        if self.ghost:
+            opacity = 0.3
+        else:
+            opacity = 1.0
+
+        s = []
         s.append('<g')
         s.append('   inkscape:label="Layer 1"')
         s.append('   inkscape:groupmode="layer"')
@@ -263,7 +279,8 @@ def commit(dim, scaling, text, row, parents=[]):
 
     arrows = []
     for p in parents:
-        a = Arrow(c, p)
+      # a = Arrow(c, p)  # students find the arrow pointing backwards confusing
+        a = Line(c, p)
         arrows.append(a)
 
     return c, arrows, dim
