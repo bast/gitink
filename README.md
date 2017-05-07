@@ -20,7 +20,10 @@ c1----c2----m1----c3----c4
    |           |
   [_branch]   [branch]
 
-$ python gitink/gitink.py example.txt | display
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install git+https://github.com/bast/gitink@master
+$ gitink example.txt | display
 ```
 
 This produces (display command requires [imagemagick](https://www.imagemagick.org)):
