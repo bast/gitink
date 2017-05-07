@@ -288,7 +288,7 @@ def commit(dim, scaling, text, row, parents=[]):
 
 def print_svg(dim, scaling, history):
     import re
-    from extract_characters import get_safe_character
+    from .extract_characters import get_safe_character
 
     history = history.split('\n')
 
