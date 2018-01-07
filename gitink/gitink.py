@@ -279,7 +279,7 @@ def commit(dim, scaling, text, row, parents=[]):
 
     arrows = []
     for p in parents:
-      # a = Arrow(c, p)  # students find the arrow pointing backwards confusing
+        # a = Arrow(c, p)  # students find the arrow pointing backwards confusing
         a = Line(c, p)
         arrows.append(a)
 
@@ -401,6 +401,7 @@ def main():
                           scaling=0.4,
                           history=f.read())
         print(s_svg)
+
 
 if __name__ == '__main__':
     main()
