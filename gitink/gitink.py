@@ -6,17 +6,13 @@ from collections import namedtuple
 from .extract_characters import get_safe_character
 
 
-def get_dim(x_min, x_max, y_min, y_max):
-
+def _dim(x_min, x_max, y_min, y_max):
     Dimensions = namedtuple('Dimensions',
                             ['x_min',
                              'x_max',
                              'y_min',
                              'y_max'])
-
-    dim = Dimensions(x_min, x_max, y_min, y_max)
-
-    return dim
+    return Dimensions(x_min, x_max, y_min, y_max)
 
 
 class Line:
@@ -121,7 +117,7 @@ class Box:
         y_min_loc = min(y_min_loc, dim.y_min)
         y_max_loc = max(y_max_loc, dim.y_max)
 
-        return get_dim(x_min_loc, x_max_loc, y_min_loc, y_max_loc)
+        return _dim(x_min_loc, x_max_loc, y_min_loc, y_max_loc)
 
     def get_center(self):
         return self.center
@@ -397,7 +393,7 @@ def main():
 
     # holds dimensions used for trimming the image
     m = sys.float_info.max
-    dim = get_dim(m, -m, m, -m)
+    dim = _dim(m, -m, m, -m)
 
     with open(sys.argv[1], 'r') as f:
         s_svg = print_svg(dim=dim,
@@ -413,7 +409,7 @@ if __name__ == '__main__':
 def test_main():
     _this_path = os.path.dirname(os.path.realpath(__file__))
     m = sys.float_info.max
-    dim = get_dim(m, -m, m, -m)
+    dim = _dim(m, -m, m, -m)
     with open(os.path.join(_this_path, 'test', 'input.txt'), 'r') as f:
         s_svg = print_svg(dim=dim,
                           scaling=0.4,
