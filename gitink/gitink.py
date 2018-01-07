@@ -1,5 +1,12 @@
+import os
+import sys
+import re
+from collections import namedtuple
+
+from .extract_characters import get_safe_character
+
+
 def get_dim(x_min, x_max, y_min, y_max):
-    from collections import namedtuple
 
     Dimensions = namedtuple('Dimensions',
                             ['x_min',
@@ -287,9 +294,6 @@ def commit(dim, scaling, text, row, parents=[]):
 
 
 def print_svg(dim, scaling, history):
-    import re
-    from .extract_characters import get_safe_character
-
     history = history.split('\n')
 
     # get dimensions of text in order to estimate svg dimensions
@@ -390,13 +394,12 @@ def print_svg(dim, scaling, history):
 
 
 def main():
-    from sys import float_info, argv
 
     # holds dimensions used for trimming the image
-    m = float_info.max
+    m = sys.float_info.max
     dim = get_dim(m, -m, m, -m)
 
-    with open(argv[1], 'r') as f:
+    with open(sys.argv[1], 'r') as f:
         s_svg = print_svg(dim=dim,
                           scaling=0.4,
                           history=f.read())
@@ -405,3 +408,16 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+def test_main():
+    _this_path = os.path.dirname(os.path.realpath(__file__))
+    m = sys.float_info.max
+    dim = get_dim(m, -m, m, -m)
+    with open(os.path.join(_this_path, 'test', 'input.txt'), 'r') as f:
+        s_svg = print_svg(dim=dim,
+                          scaling=0.4,
+                          history=f.read())
+    with open(os.path.join(_this_path, 'test', 'output.txt'), 'r') as f:
+        reference = f.read()
+        assert s_svg + '\n' == reference
