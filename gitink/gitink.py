@@ -282,7 +282,6 @@ def commit(dim, scaling, text, row, parents=[]):
 
     arrows = []
     for p in parents:
-        # a = Arrow(c, p)  # students find the arrow pointing backwards confusing
         a = Line(c, p)
         arrows.append(a)
 
