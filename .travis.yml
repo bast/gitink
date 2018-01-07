@@ -1,0 +1,18 @@
+sudo: false
+
+language:
+  - python
+
+python:
+  - 2.7
+  - 3.6
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - pycodestyle --ignore E501 gitink
+  - pytest -vv -s gitink/*
+
+notifications:
+  email: false

@@ -1,3 +1,5 @@
+.. image:: https://travis-ci.org/bast/gitink.svg?branch=master
+   :target: https://travis-ci.org/bast/gitink/builds
 .. image:: https://img.shields.io/badge/license-%20MPL--v2.0-blue.svg
    :target: ../master/LICENSE
 
