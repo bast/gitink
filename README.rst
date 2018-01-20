@@ -9,6 +9,10 @@ gitink
 
 ASCII to SVG Git log graph visualizer. Useful for teaching Git.
 
+
+Example
+-------
+
 .. code:: shell
 
   $ cat example.txt
@@ -23,9 +27,19 @@ ASCII to SVG Git log graph visualizer. Useful for teaching Git.
      |           |
     [_branch]   [branch]
 
-  $ virtualenv venv
-  $ source venv/bin/activate
-  $ pip install git+https://github.com/bast/gitink@master
+  $ gitink --time-direction=90 --in-file=example.txt | display
+
+This produces (display command requires
+`imagemagick <https://www.imagemagick.org>`__):
+
+.. figure:: https://github.com/bast/gitink/raw/master/img/example.jpg
+   :alt: Git log graph example
+
+
+Available options
+-----------------
+
+.. code:: shell
 
   $ gitink --help
   Usage: gitink [OPTIONS]
@@ -36,17 +50,9 @@ ASCII to SVG Git log graph visualizer. Useful for teaching Git.
     --time-direction INTEGER  Direction of the time arrow (0, 90, 180, or 270).
     --help                    Show this message and exit.
 
-  $ gitink --time-direction=90 --in-file=example.txt | display
 
-This produces (display command requires
-`imagemagick <https://www.imagemagick.org>`__):
-
-.. figure:: https://github.com/bast/gitink/raw/master/img/example.jpg
-   :alt: Git log graph example
-
-
-Installing
-----------
+Installation
+------------
 
 As the software is not quite finished it isn’t in PyPI yet. You can
 install it with pip by using
