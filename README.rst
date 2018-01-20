@@ -26,7 +26,17 @@ ASCII to SVG Git log graph visualizer. Useful for teaching Git.
   $ virtualenv venv
   $ source venv/bin/activate
   $ pip install git+https://github.com/bast/gitink@master
-  $ gitink example.txt | display
+
+  $ gitink --help
+  Usage: gitink [OPTIONS]
+
+  Options:
+    --scale FLOAT             Scale sizes by this factor.
+    --in-file TEXT            ASCII file to convert.
+    --time-direction INTEGER  Direction of the time arrow (0, 90, 180, or 270).
+    --help                    Show this message and exit.
+
+  $ gitink --time-direction=90 --in-file=example.txt | display
 
 This produces (display command requires
 `imagemagick <https://www.imagemagick.org>`__):
