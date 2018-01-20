@@ -8,6 +8,7 @@ gitink
 ======
 
 ASCII to SVG Git log graph visualizer. Useful for teaching Git.
+Under the hood it uses https://github.com/bast/ascii2graph.
 
 
 Example
