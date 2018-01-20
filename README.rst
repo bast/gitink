@@ -46,3 +46,9 @@ install it with pip by using
   $ pip install git+https://github.com/bast/gitink@master
 
 Alternately you can replace master with a branch or a tag.
+
+
+I used this code before but the API changed?
+--------------------------------------------
+
+You can find the old version on the ``spaghetti`` branch.
