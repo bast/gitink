@@ -27,7 +27,7 @@ setup(
     packages=['gitink'],
     entry_points={
       'console_scripts': [
-          'gitink = gitink.main:cli'
+          'gitink = gitink.cli:cli'
           ]
       },
     install_requires=[
