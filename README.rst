@@ -46,19 +46,3 @@ install it with pip by using
   $ pip install git+https://github.com/bast/gitink@master
 
 Alternately you can replace master with a branch or a tag.
-
-
-Contributions
--------------
-
-Contributions are most welcome!
-
-Suggestions:
-
--  Create a package and split into modules.
--  Disentangle.
--  Simplify.
--  Split long functions into smaller units.
--  Unit test functions.
--  Use named tuples instead of classes.
--  Avoid global variables.
