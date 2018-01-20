@@ -1,3 +1,4 @@
 pytest
 pycodestyle
 ascii2graph == 0.3.1
+click
