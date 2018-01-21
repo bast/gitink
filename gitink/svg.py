@@ -1,6 +1,6 @@
 def get_box_dims(scale, text):
-    width = scale * 15.5 * (len(text) + 2)
-    height = scale * 60.0
+    width = scale * 8.0 * (len(text) + 2)
+    height = scale * 30.0
     return width, height
 
 
@@ -38,7 +38,7 @@ def embed_svg(text, bbox):
                     <path
                        style="opacity:1.0;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-                       transform="scale(0.6) rotate(180) translate(0,0)" />
+                       transform="scale(0.5) rotate(180) translate(0,0)" />
                   </marker>
                   <marker
                      inkscape:stockid="ghostmarker"
@@ -50,7 +50,7 @@ def embed_svg(text, bbox):
                     <path
                        style="opacity:0.2;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-                       transform="scale(0.6) rotate(180) translate(0,0)" />
+                       transform="scale(0.5) rotate(180) translate(0,0)" />
                   </marker>
                 </defs>
                 <g inkscape:label="layer1"
@@ -87,7 +87,7 @@ def draw_line(x1,
                       x2=x2,
                       y2=y2,
                       color=color,
-                      width=scale * 5.0,
+                      width=scale * 2.5,
                       opacity=opacity)
 
 
@@ -123,7 +123,7 @@ def draw_arrow(x1,
                       x2=x2,
                       y2=y2,
                       color=color,
-                      width=scale * 5.0,
+                      width=scale * 2.5,
                       opacity=opacity,
                       marker=marker)
 
@@ -138,14 +138,14 @@ def draw_box(text,
              rounded):
 
     width, height = get_box_dims(scale, text)
-    text_x = x + scale * 15.0
-    text_y = y + scale * 25.0 + 15.0
+    text_x = x + scale * 7.5
+    text_y = y + scale * 12.5 + 8.0
     if rounded:
-        rounding = scale * 10.0
+        rounding = scale * 5.0
     else:
         rounding = 0.0
-    font_size = scale * 25.5
-    stroke_width = scale * 2.5
+    font_size = scale * 12.5
+    stroke_width = scale * 1.25
 
     return '''
            <rect style="fill:{fill_color};

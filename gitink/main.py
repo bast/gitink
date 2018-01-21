@@ -179,7 +179,7 @@ def main(scale, in_file, time_direction):
 
     placement = move_children_behind_current_commit(scale=scale,
                                                     time_direction=time_direction,
-                                                    min_separation=scale * 120.0,
+                                                    min_separation=scale * 60.0,
                                                     commit=root_commit,
                                                     commits=commits,
                                                     placement=placement)
@@ -241,14 +241,14 @@ def main(scale, in_file, time_direction):
             tag_width, tag_height = get_box_dims(scale, tag)
             if angle == 0:
                 x = x + 0.5 * target_width - 0.5 * tag_width
-                y = y + target_height + scale * 70.0
+                y = y + target_height + scale * 35.0
             elif angle == 180:
                 x = x + 0.5 * target_width - 0.5 * tag_width
-                y = y - tag_height - scale * 70.0
+                y = y - tag_height - scale * 35.0
             if angle == 90:
-                x = x - tag_width - scale * 70.0
+                x = x - tag_width - scale * 35.0
             elif angle == 270:
-                x = x + target_width + scale * 70.0
+                x = x + target_width + scale * 35.0
             x_min = min(x_min, x)
             y_min = min(y_min, y)
             x_max = max(x_max, x + tag_width)

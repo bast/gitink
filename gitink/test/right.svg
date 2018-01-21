@@ -8,8 +8,8 @@
                  xmlns="http://www.w3.org/2000/svg"
                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                 width="700.75"
-                 height="570.0"
+                 width="352.0"
+                 height="285.0"
                  id="svg2"
                  version="1.1"
                  inkscape:version="0.48.3.1 r9886"
@@ -27,7 +27,7 @@
                     <path
                        style="opacity:1.0;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-                       transform="scale(0.6) rotate(180) translate(0,0)" />
+                       transform="scale(0.5) rotate(180) translate(0,0)" />
                   </marker>
                   <marker
                      inkscape:stockid="ghostmarker"
@@ -39,178 +39,106 @@
                     <path
                        style="opacity:0.2;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
-                       transform="scale(0.6) rotate(180) translate(0,0)" />
+                       transform="scale(0.5) rotate(180) translate(0,0)" />
                   </marker>
                 </defs>
                 <g inkscape:label="layer1"
                    inkscape:groupmode="layer"
-                   transform="translate(-0.0,250.0) rotate(0)"
+                   transform="translate(-0.0,125.0) rotate(0)"
                    id="layer1">
                    
-           <line x1="511.0"
-                 y1="30.0"
-                 x2="631.0"
-                 y2="30.0"
+           <line x1="256.0"
+                 y1="15.0"
+                 x2="316.0"
+                 y2="15.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="151.0"
-                 y1="150.0"
-                 x2="271.0"
-                 y2="150.0"
+           <line x1="76.0"
+                 y1="75.0"
+                 x2="136.0"
+                 y2="75.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="271.0"
-                 y1="150.0"
-                 x2="391.0"
-                 y2="150.0"
+           <line x1="136.0"
+                 y1="75.0"
+                 x2="196.0"
+                 y2="75.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="271.0"
-                 y1="150.0"
-                 x2="391.0"
-                 y2="30.0"
+           <line x1="136.0"
+                 y1="75.0"
+                 x2="196.0"
+                 y2="15.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="391.0"
-                 y1="30.0"
-                 x2="511.0"
-                 y2="30.0"
+           <line x1="196.0"
+                 y1="15.0"
+                 x2="256.0"
+                 y2="15.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="391.0"
-                 y1="30.0"
-                 x2="511.0"
-                 y2="-90.0"
+           <line x1="196.0"
+                 y1="15.0"
+                 x2="256.0"
+                 y2="-45.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="511.0"
-                 y1="-90.0"
-                 x2="631.0"
-                 y2="-90.0"
+           <line x1="256.0"
+                 y1="-45.0"
+                 x2="316.0"
+                 y2="-45.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="151.0"
-                 y1="30.0"
-                 x2="391.0"
-                 y2="30.0"
+           <line x1="76.0"
+                 y1="15.0"
+                 x2="196.0"
+                 y2="15.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="31.0"
-                 y1="30.0"
-                 x2="151.0"
-                 y2="30.0"
+           <line x1="16.0"
+                 y1="15.0"
+                 x2="76.0"
+                 y2="15.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
-           <line x1="31.0"
-                 y1="30.0"
-                 x2="151.0"
-                 y2="150.0"
+           <line x1="16.0"
+                 y1="15.0"
+                 x2="76.0"
+                 y2="75.0"
                  style="stroke:#000000;
-                        stroke-width:5.0;
+                        stroke-width:2.5;
                         stroke-opacity:0.8" />
            
            <rect style="fill:#c7b8f8;
                         stroke:#8172B2;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="480.0"
-                 y="0.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="495.0"
-                 y="40.0">c3</text>
-           
-           <rect style="fill:#c7b8f8;
-                        stroke:#8172B2;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="600.0"
-                 y="0.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="615.0"
-                 y="40.0">c4</text>
-           
-           <rect style="fill:#ff9498;
-                        stroke:#C44E52;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="120.0"
-                 y="120.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="135.0"
-                 y="160.0">b1</text>
-           
-           <rect style="fill:#ff9498;
-                        stroke:#C44E52;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
+                 width="32.0"
+                 height="30.0"
                  x="240.0"
-                 y="120.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
+                 y="0.0"
+                 ry="5.0" />
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -220,21 +148,93 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="255.0"
-                 y="160.0">b2</text>
+                 x="247.5"
+                 y="20.5">c3</text>
+           
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
+                        stroke-width:1.25;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 width="32.0"
+                 height="30.0"
+                 x="300.0"
+                 y="0.0"
+                 ry="5.0" />
+           <text style="font-size:12.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="307.5"
+                 y="20.5">c4</text>
+           
+           <rect style="fill:#ff9498;
+                        stroke:#C44E52;
+                        stroke-width:1.25;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 width="32.0"
+                 height="30.0"
+                 x="60.0"
+                 y="60.0"
+                 ry="5.0" />
+           <text style="font-size:12.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="67.5"
+                 y="80.5">b1</text>
+           
+           <rect style="fill:#ff9498;
+                        stroke:#C44E52;
+                        stroke-width:1.25;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 width="32.0"
+                 height="30.0"
+                 x="120.0"
+                 y="60.0"
+                 ry="5.0" />
+           <text style="font-size:12.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="127.5"
+                 y="80.5">b2</text>
            
            <rect style="fill:#9beeae;
                         stroke:#55A868;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="360.0"
+                 width="32.0"
+                 height="30.0"
+                 x="180.0"
                  y="0.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
+                 ry="5.0" />
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -244,21 +244,21 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="375.0"
-                 y="40.0">m1</text>
+                 x="187.5"
+                 y="20.5">m1</text>
            
            <rect style="fill:#92b8f6;
                         stroke:#4C72B0;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="480.0"
-                 y="-120.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
+                 width="32.0"
+                 height="30.0"
+                 x="240.0"
+                 y="-60.0"
+                 ry="5.0" />
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -268,21 +268,21 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="495.0"
-                 y="-80.0">x1</text>
+                 x="247.5"
+                 y="-39.5">x1</text>
            
            <rect style="fill:#92b8f6;
                         stroke:#4C72B0;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="600.0"
-                 y="-120.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
+                 width="32.0"
+                 height="30.0"
+                 x="300.0"
+                 y="-60.0"
+                 ry="5.0" />
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -292,21 +292,21 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="615.0"
-                 y="-80.0">x2</text>
+                 x="307.5"
+                 y="-39.5">x2</text>
            
            <rect style="fill:#c7b8f8;
                         stroke:#8172B2;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="120.0"
+                 width="32.0"
+                 height="30.0"
+                 x="60.0"
                  y="0.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
+                 ry="5.0" />
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -316,21 +316,21 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="135.0"
-                 y="40.0">c2</text>
+                 x="67.5"
+                 y="20.5">c2</text>
            
            <rect style="fill:#ff9498;
                         stroke:#C44E52;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
-                 x="360.0"
-                 y="120.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
+                 width="32.0"
+                 height="30.0"
+                 x="180.0"
+                 y="60.0"
+                 ry="5.0" />
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -340,21 +340,21 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="375.0"
-                 y="160.0">b3</text>
+                 x="187.5"
+                 y="80.5">b3</text>
            
            <rect style="fill:#c7b8f8;
                         stroke:#8172B2;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="62.0"
-                 height="60.0"
+                 width="32.0"
+                 height="30.0"
                  x="0.0"
                  y="0.0"
-                 ry="10.0" />
-           <text style="font-size:25.5px;
+                 ry="5.0" />
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -364,33 +364,69 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="15.0"
-                 y="40.0">c1</text>
+                 x="7.5"
+                 y="20.5">c1</text>
            
            <path style="fill:none;
                  stroke:#000000;
-                 stroke-width:5.0;
+                 stroke-width:2.5;
                  stroke-linecap:butt;
                  stroke-linejoin:miter;
                  stroke-opacity:1.0;
                  marker-end:url(#fullmarker);
                  stroke-miterlimit:4;
                  stroke-dasharray:none"
-                 d="M 631.0,160.0 631.0,61.2"
+                 d="M 316.0,80.0 316.0,30.6"
                  inkscape:connector-curvature="0" />
            
            <rect style="fill:#dddddd;
                         stroke:#000000;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="124.0"
-                 height="60.0"
-                 x="569.0"
+                 width="64.0"
+                 height="30.0"
+                 x="284.0"
+                 y="65.0"
+                 ry="0.0" />
+           <text style="font-size:12.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="291.5"
+                 y="85.5">master</text>
+           
+           <path style="fill:none;
+                 stroke:#000000;
+                 stroke-width:2.5;
+                 stroke-linecap:butt;
+                 stroke-linejoin:miter;
+                 stroke-opacity:1.0;
+                 marker-end:url(#fullmarker);
+                 stroke-miterlimit:4;
+                 stroke-dasharray:none"
+                 d="M 316.0,145.0 316.0,95.6"
+                 inkscape:connector-curvature="0" />
+           
+           <rect style="fill:#dddddd;
+                        stroke:#000000;
+                        stroke-width:1.25;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 width="48.0"
+                 height="30.0"
+                 x="292.0"
                  y="130.0"
                  ry="0.0" />
-           <text style="font-size:25.5px;
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -400,33 +436,33 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="584.0"
-                 y="170.0">master</text>
+                 x="299.5"
+                 y="150.5">HEAD</text>
            
            <path style="fill:none;
                  stroke:#000000;
-                 stroke-width:5.0;
+                 stroke-width:2.5;
                  stroke-linecap:butt;
                  stroke-linejoin:miter;
                  stroke-opacity:1.0;
                  marker-end:url(#fullmarker);
                  stroke-miterlimit:4;
                  stroke-dasharray:none"
-                 d="M 631.0,290.0 631.0,191.2"
+                 d="M 196.0,140.0 196.0,90.6"
                  inkscape:connector-curvature="0" />
            
            <rect style="fill:#dddddd;
                         stroke:#000000;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="93.0"
-                 height="60.0"
-                 x="584.5"
-                 y="260.0"
+                 width="64.0"
+                 height="30.0"
+                 x="164.0"
+                 y="125.0"
                  ry="0.0" />
-           <text style="font-size:25.5px;
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -436,69 +472,33 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="599.5"
-                 y="300.0">HEAD</text>
+                 x="171.5"
+                 y="145.5">branch</text>
            
            <path style="fill:none;
                  stroke:#000000;
-                 stroke-width:5.0;
-                 stroke-linecap:butt;
-                 stroke-linejoin:miter;
-                 stroke-opacity:1.0;
-                 marker-end:url(#fullmarker);
-                 stroke-miterlimit:4;
-                 stroke-dasharray:none"
-                 d="M 391.0,280.0 391.0,181.2"
-                 inkscape:connector-curvature="0" />
-           
-           <rect style="fill:#dddddd;
-                        stroke:#000000;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 width="124.0"
-                 height="60.0"
-                 x="329.0"
-                 y="250.0"
-                 ry="0.0" />
-           <text style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="344.0"
-                 y="290.0">branch</text>
-           
-           <path style="fill:none;
-                 stroke:#000000;
-                 stroke-width:5.0;
+                 stroke-width:2.5;
                  stroke-linecap:butt;
                  stroke-linejoin:miter;
                  stroke-opacity:0.2;
                  marker-end:url(#ghostmarker);
                  stroke-miterlimit:4;
                  stroke-dasharray:none"
-                 d="M 151.0,280.0 151.0,181.2"
+                 d="M 76.0,140.0 76.0,90.6"
                  inkscape:connector-curvature="0" />
            
            <rect style="fill:#ffffff;
                         stroke:#000000;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:0.2;
                         stroke-dasharray:none"
-                 width="124.0"
-                 height="60.0"
-                 x="81.25"
-                 y="250.0"
+                 width="64.0"
+                 height="30.0"
+                 x="40.0"
+                 y="125.0"
                  ry="0.0" />
-           <text style="font-size:25.5px;
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -508,33 +508,33 @@
                         fill-opacity:0.2;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="96.25"
-                 y="290.0">branch</text>
+                 x="47.5"
+                 y="145.5">branch</text>
            
            <path style="fill:none;
                  stroke:#000000;
-                 stroke-width:5.0;
+                 stroke-width:2.5;
                  stroke-linecap:butt;
                  stroke-linejoin:miter;
                  stroke-opacity:1.0;
                  marker-end:url(#fullmarker);
                  stroke-miterlimit:4;
                  stroke-dasharray:none"
-                 d="M 631.0,-220.0 631.0,-121.2"
+                 d="M 316.0,-110.0 316.0,-60.6"
                  inkscape:connector-curvature="0" />
            
            <rect style="fill:#dddddd;
                         stroke:#000000;
-                        stroke-width:2.5;
+                        stroke-width:1.25;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 width="139.5"
-                 height="60.0"
-                 x="561.25"
-                 y="-250.0"
+                 width="72.0"
+                 height="30.0"
+                 x="280.0"
+                 y="-125.0"
                  ry="0.0" />
-           <text style="font-size:25.5px;
+           <text style="font-size:12.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -544,8 +544,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="576.25"
-                 y="-210.0">feature</text>
+                 x="287.5"
+                 y="-104.5">feature</text>
            
                 </g>
               </svg>
