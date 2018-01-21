@@ -36,7 +36,6 @@ def embed_svg(text, bbox):
                      id="fullmarker"
                      style="overflow:visible;">
                     <path
-                       id="path3786"
                        style="opacity:1.0;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
                        transform="scale(0.6) rotate(180) translate(0,0)" />
@@ -49,13 +48,12 @@ def embed_svg(text, bbox):
                      id="ghostmarker"
                      style="overflow:visible;">
                     <path
-                       id="path3786"
                        style="opacity:0.2;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
                        transform="scale(0.6) rotate(180) translate(0,0)" />
                   </marker>
                 </defs>
-                <g inkscape:label="Layer 1"
+                <g inkscape:label="layer1"
                    inkscape:groupmode="layer"
                    transform="translate({translate_x},{translate_y}) rotate(0)"
                    id="layer1">
@@ -119,7 +117,6 @@ def draw_arrow(x1,
                  stroke-miterlimit:4;
                  stroke-dasharray:none"
                  d="M {x1},{y1} {x2},{y2}"
-                 id="path2985"
                  inkscape:connector-curvature="0" />
            '''.format(x1=x1,
                       y1=y1,
@@ -141,6 +138,7 @@ def draw_box(text,
              rounded):
 
     width, height = get_box_dims(scale, text)
+    text_x = x + scale * 15.0
     text_y = y + scale * 25.0 + 15.0
     if rounded:
         rounding = scale * 10.0
@@ -156,14 +154,12 @@ def draw_box(text,
                         stroke-miterlimit:4;
                         stroke-opacity:{opacity};
                         stroke-dasharray:none"
-                 id="rect0"
                  width="{width}"
                  height="{height}"
                  x="{x}"
                  y="{y}"
                  ry="{rounding}" />
-           <text xml:space="preserve"
-                 style="font-size:{font_size}px;
+           <text style="font-size:{font_size}px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -173,12 +169,8 @@ def draw_box(text,
                         fill-opacity:{opacity};
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="{x}"
-                 y="{text_y}"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> {text} </tspan>
-           </text>
+                 x="{text_x}"
+                 y="{text_y}">{text}</text>
            '''.format(fill_color=fill_color,
                       stroke_color=stroke_color,
                       stroke_width=stroke_width,
@@ -186,6 +178,7 @@ def draw_box(text,
                       height=height,
                       x=x,
                       y=y,
+                      text_x=text_x,
                       text_y=text_y,
                       rounding=rounding,
                       font_size=font_size,

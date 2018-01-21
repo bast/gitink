@@ -25,7 +25,6 @@
                      id="fullmarker"
                      style="overflow:visible;">
                     <path
-                       id="path3786"
                        style="opacity:1.0;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
                        transform="scale(0.6) rotate(180) translate(0,0)" />
@@ -38,13 +37,12 @@
                      id="ghostmarker"
                      style="overflow:visible;">
                     <path
-                       id="path3786"
                        style="opacity:0.2;fill:#000000;stroke:#000000;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
                        d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
                        transform="scale(0.6) rotate(180) translate(0,0)" />
                   </marker>
                 </defs>
-                <g inkscape:label="Layer 1"
+                <g inkscape:label="layer1"
                    inkscape:groupmode="layer"
                    transform="translate(194.0,-0.0) rotate(0)"
                    id="layer1">
@@ -95,14 +93,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="62.0"
                  height="60.0"
                  x="0.0"
                  y="120.0"
                  ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -112,12 +108,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="0.0"
-                 y="160.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> c2 </tspan>
-           </text>
+                 x="15.0"
+                 y="160.0">c2</text>
            
            <rect style="fill:#c7b8f8;
                         stroke:#8172B2;
@@ -125,14 +117,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="62.0"
                  height="60.0"
                  x="0.0"
                  y="240.0"
                  ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -142,12 +132,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="0.0"
-                 y="280.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> c3 </tspan>
-           </text>
+                 x="15.0"
+                 y="280.0">c3</text>
            
            <rect style="fill:#c7b8f8;
                         stroke:#8172B2;
@@ -155,14 +141,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="62.0"
                  height="60.0"
                  x="0.0"
                  y="360.0"
                  ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -172,12 +156,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="0.0"
-                 y="400.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> c4 </tspan>
-           </text>
+                 x="15.0"
+                 y="400.0">c4</text>
            
            <rect style="fill:#92b8f6;
                         stroke:#4C72B0;
@@ -185,14 +165,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="62.0"
                  height="60.0"
                  x="120.0"
                  y="360.0"
                  ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -202,12 +180,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="120.0"
-                 y="400.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> x1 </tspan>
-           </text>
+                 x="135.0"
+                 y="400.0">x1</text>
            
            <rect style="fill:#92b8f6;
                         stroke:#4C72B0;
@@ -215,14 +189,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="62.0"
                  height="60.0"
                  x="120.0"
                  y="480.0"
                  ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -232,12 +204,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="120.0"
-                 y="520.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> x2 </tspan>
-           </text>
+                 x="135.0"
+                 y="520.0">x2</text>
            
            <rect style="fill:#c7b8f8;
                         stroke:#8172B2;
@@ -245,14 +213,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="62.0"
                  height="60.0"
                  x="0.0"
                  y="0.0"
                  ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -262,12 +228,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="0.0"
-                 y="40.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> c1 </tspan>
-           </text>
+                 x="15.0"
+                 y="40.0">c1</text>
            
            <path style="fill:none;
                  stroke:#000000;
@@ -279,7 +241,6 @@
                  stroke-miterlimit:4;
                  stroke-dasharray:none"
                  d="M 290.75,510.0 183.14249999999998,510.0"
-                 id="path2985"
                  inkscape:connector-curvature="0" />
            
            <rect style="fill:#dddddd;
@@ -288,14 +249,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="77.5"
                  height="60.0"
                  x="252.0"
                  y="480.0"
                  ry="0.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -305,12 +264,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="252.0"
-                 y="520.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> foo </tspan>
-           </text>
+                 x="267.0"
+                 y="520.0">foo</text>
            
            <path style="fill:none;
                  stroke:#000000;
@@ -322,7 +277,6 @@
                  stroke-miterlimit:4;
                  stroke-dasharray:none"
                  d="M -132.0,390.0 -1.6000000000000014,390.0"
-                 id="path2985"
                  inkscape:connector-curvature="0" />
            
            <rect style="fill:#dddddd;
@@ -331,14 +285,12 @@
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
-                 id="rect0"
                  width="124.0"
                  height="60.0"
                  x="-194.0"
                  y="360.0"
                  ry="0.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
+           <text style="font-size:25.5px;
                         font-style:normal;
                         font-weight:normal;
                         line-height:125%%;
@@ -348,12 +300,8 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="-194.0"
-                 y="400.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> master </tspan>
-           </text>
+                 x="-179.0"
+                 y="400.0">master</text>
            
                 </g>
               </svg>
