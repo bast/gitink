@@ -65,6 +65,13 @@ install it with pip by using
 Alternately you can replace master with a branch or a tag.
 
 
+How do the colors work?
+-----------------------
+
+Coloring is done according to the first character of the commit hash.  Other
+suggestions welcome.
+
+
 I used this code before but the API changed?
 --------------------------------------------
 

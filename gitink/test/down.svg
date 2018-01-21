@@ -89,8 +89,8 @@
                         stroke-width:5.0;
                         stroke-opacity:0.8" />
            
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -119,8 +119,8 @@
                <tspan sodipodi:role="line" id="tspan0"> c2 </tspan>
            </text>
            
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -149,8 +149,8 @@
                <tspan sodipodi:role="line" id="tspan0"> c3 </tspan>
            </text>
            
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -179,8 +179,8 @@
                <tspan sodipodi:role="line" id="tspan0"> c4 </tspan>
            </text>
            
-           <rect style="fill:#ffaaaa;
-                        stroke:#ff0000;
+           <rect style="fill:#92b8f6;
+                        stroke:#4C72B0;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -209,8 +209,8 @@
                <tspan sodipodi:role="line" id="tspan0"> x1 </tspan>
            </text>
            
-           <rect style="fill:#ffaaaa;
-                        stroke:#ff0000;
+           <rect style="fill:#92b8f6;
+                        stroke:#4C72B0;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -239,8 +239,8 @@
                <tspan sodipodi:role="line" id="tspan0"> x2 </tspan>
            </text>
            
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -267,49 +267,6 @@
                  id="text0"
                  sodipodi:linespacing="125%">
                <tspan sodipodi:role="line" id="tspan0"> c1 </tspan>
-           </text>
-           
-           <path style="fill:none;
-                 stroke:#000000;
-                 stroke-width:5.0;
-                 stroke-linecap:butt;
-                 stroke-linejoin:miter;
-                 stroke-opacity:1.0;
-                 marker-end:url(#fullmarker);
-                 stroke-miterlimit:4;
-                 stroke-dasharray:none"
-                 d="M -132.0,390.0 -1.6000000000000014,390.0"
-                 id="path2985"
-                 inkscape:connector-curvature="0" />
-           
-           <rect style="fill:#dddddd;
-                        stroke:#000000;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 id="rect0"
-                 width="124.0"
-                 height="60.0"
-                 x="-194.0"
-                 y="360.0"
-                 ry="0.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="-194.0"
-                 y="400.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> master </tspan>
            </text>
            
            <path style="fill:none;
@@ -353,6 +310,49 @@
                  id="text0"
                  sodipodi:linespacing="125%">
                <tspan sodipodi:role="line" id="tspan0"> foo </tspan>
+           </text>
+           
+           <path style="fill:none;
+                 stroke:#000000;
+                 stroke-width:5.0;
+                 stroke-linecap:butt;
+                 stroke-linejoin:miter;
+                 stroke-opacity:1.0;
+                 marker-end:url(#fullmarker);
+                 stroke-miterlimit:4;
+                 stroke-dasharray:none"
+                 d="M -132.0,390.0 -1.6000000000000014,390.0"
+                 id="path2985"
+                 inkscape:connector-curvature="0" />
+           
+           <rect style="fill:#dddddd;
+                        stroke:#000000;
+                        stroke-width:2.5;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 id="rect0"
+                 width="124.0"
+                 height="60.0"
+                 x="-194.0"
+                 y="360.0"
+                 ry="0.0" />
+           <text xml:space="preserve"
+                 style="font-size:25.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="-194.0"
+                 y="400.0"
+                 id="text0"
+                 sodipodi:linespacing="125%">
+               <tspan sodipodi:role="line" id="tspan0"> master </tspan>
            </text>
            
                 </g>

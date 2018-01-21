@@ -1,12 +1,41 @@
+def whiter_shade_of_pale(hex_color):
+    '''
+    This function pales the color a bit for the interior
+    of the boxes.
+    '''
+    pale_shift = 70
+
+    r_hex = hex_color[1:3]
+    g_hex = hex_color[3:5]
+    b_hex = hex_color[5:7]
+
+    r_dec = int(r_hex, 16)
+    g_dec = int(g_hex, 16)
+    b_dec = int(b_hex, 16)
+
+    r_dec = min(255, r_dec + pale_shift)
+    g_dec = min(255, g_dec + pale_shift)
+    b_dec = min(255, b_dec + pale_shift)
+
+    r_hex = format(r_dec, '02x')
+    g_hex = format(g_dec, '02x')
+    b_hex = format(b_dec, '02x')
+
+    return '#{0}{1}{2}'.format(r_hex, g_hex, b_hex)
+
+
 def get_color(text):
-    if text.startswith('a'):
-        return '#ff0000', '#ffaaaa'
-    if text.startswith('b'):
-        return '#00ff00', '#aaffaa'
-    if text.startswith('c'):
-        return '#0000ff', '#aaaaff'
-    if text.startswith('e'):
-        return '#000000', '#aaaaaa'
-    if text.startswith('m'):
-        return '#000000', '#aaaaaa'
-    return '#ff0000', '#ffaaaa'
+
+    # this is the deep palette of https://seaborn.pydata.org/
+    palette = ['#4C72B0',
+               '#55A868',
+               '#C44E52',
+               '#8172B2',
+               '#CCB974',
+               '#64B5CD']
+
+    position = ord(text[0]) % len(palette)
+    color = palette[position]
+    pale_color = whiter_shade_of_pale(color)
+
+    return color, pale_color

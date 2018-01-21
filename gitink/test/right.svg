@@ -49,6 +49,38 @@
                    transform="translate(-0.0,250.0) rotate(0)"
                    id="layer1">
                    
+           <line x1="511.0"
+                 y1="30.0"
+                 x2="631.0"
+                 y2="30.0"
+                 style="stroke:#000000;
+                        stroke-width:5.0;
+                        stroke-opacity:0.8" />
+           
+           <line x1="151.0"
+                 y1="150.0"
+                 x2="271.0"
+                 y2="150.0"
+                 style="stroke:#000000;
+                        stroke-width:5.0;
+                        stroke-opacity:0.8" />
+           
+           <line x1="271.0"
+                 y1="150.0"
+                 x2="391.0"
+                 y2="150.0"
+                 style="stroke:#000000;
+                        stroke-width:5.0;
+                        stroke-opacity:0.8" />
+           
+           <line x1="271.0"
+                 y1="150.0"
+                 x2="391.0"
+                 y2="30.0"
+                 style="stroke:#000000;
+                        stroke-width:5.0;
+                        stroke-opacity:0.8" />
+           
            <line x1="391.0"
                  y1="30.0"
                  x2="511.0"
@@ -61,38 +93,6 @@
                  y1="30.0"
                  x2="511.0"
                  y2="-90.0"
-                 style="stroke:#000000;
-                        stroke-width:5.0;
-                        stroke-opacity:0.8" />
-           
-           <line x1="511.0"
-                 y1="30.0"
-                 x2="631.0"
-                 y2="30.0"
-                 style="stroke:#000000;
-                        stroke-width:5.0;
-                        stroke-opacity:0.8" />
-           
-           <line x1="31.0"
-                 y1="30.0"
-                 x2="151.0"
-                 y2="150.0"
-                 style="stroke:#000000;
-                        stroke-width:5.0;
-                        stroke-opacity:0.8" />
-           
-           <line x1="31.0"
-                 y1="30.0"
-                 x2="151.0"
-                 y2="30.0"
-                 style="stroke:#000000;
-                        stroke-width:5.0;
-                        stroke-opacity:0.8" />
-           
-           <line x1="151.0"
-                 y1="150.0"
-                 x2="271.0"
-                 y2="150.0"
                  style="stroke:#000000;
                         stroke-width:5.0;
                         stroke-opacity:0.8" />
@@ -113,54 +113,24 @@
                         stroke-width:5.0;
                         stroke-opacity:0.8" />
            
-           <line x1="271.0"
-                 y1="150.0"
-                 x2="391.0"
+           <line x1="31.0"
+                 y1="30.0"
+                 x2="151.0"
                  y2="30.0"
                  style="stroke:#000000;
                         stroke-width:5.0;
                         stroke-opacity:0.8" />
            
-           <line x1="271.0"
-                 y1="150.0"
-                 x2="391.0"
+           <line x1="31.0"
+                 y1="30.0"
+                 x2="151.0"
                  y2="150.0"
                  style="stroke:#000000;
                         stroke-width:5.0;
                         stroke-opacity:0.8" />
            
-           <rect style="fill:#aaaaaa;
-                        stroke:#000000;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 id="rect0"
-                 width="62.0"
-                 height="60.0"
-                 x="360.0"
-                 y="0.0"
-                 ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="360.0"
-                 y="40.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> m1 </tspan>
-           </text>
-           
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -189,8 +159,8 @@
                <tspan sodipodi:role="line" id="tspan0"> c3 </tspan>
            </text>
            
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -219,38 +189,8 @@
                <tspan sodipodi:role="line" id="tspan0"> c4 </tspan>
            </text>
            
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 id="rect0"
-                 width="62.0"
-                 height="60.0"
-                 x="0.0"
-                 y="0.0"
-                 ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="0.0"
-                 y="40.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> c1 </tspan>
-           </text>
-           
-           <rect style="fill:#aaffaa;
-                        stroke:#00ff00;
+           <rect style="fill:#ff9498;
+                        stroke:#C44E52;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -279,128 +219,8 @@
                <tspan sodipodi:role="line" id="tspan0"> b1 </tspan>
            </text>
            
-           <rect style="fill:#ffaaaa;
-                        stroke:#ff0000;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 id="rect0"
-                 width="62.0"
-                 height="60.0"
-                 x="480.0"
-                 y="-120.0"
-                 ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="480.0"
-                 y="-80.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> x1 </tspan>
-           </text>
-           
-           <rect style="fill:#ffaaaa;
-                        stroke:#ff0000;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 id="rect0"
-                 width="62.0"
-                 height="60.0"
-                 x="600.0"
-                 y="-120.0"
-                 ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="600.0"
-                 y="-80.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> x2 </tspan>
-           </text>
-           
-           <rect style="fill:#aaaaff;
-                        stroke:#0000ff;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 id="rect0"
-                 width="62.0"
-                 height="60.0"
-                 x="120.0"
-                 y="0.0"
-                 ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="120.0"
-                 y="40.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> c2 </tspan>
-           </text>
-           
-           <rect style="fill:#aaffaa;
-                        stroke:#00ff00;
-                        stroke-width:2.5;
-                        stroke-miterlimit:4;
-                        stroke-opacity:1.0;
-                        stroke-dasharray:none"
-                 id="rect0"
-                 width="62.0"
-                 height="60.0"
-                 x="360.0"
-                 y="120.0"
-                 ry="10.0" />
-           <text xml:space="preserve"
-                 style="font-size:25.5px;
-                        font-style:normal;
-                        font-weight:normal;
-                        line-height:125%%;
-                        letter-spacing:0px;
-                        word-spacing:0px;
-                        fill:#000000;
-                        fill-opacity:1.0;
-                        stroke:none;
-                        font-family:DejaVu Sans Mono"
-                 x="360.0"
-                 y="160.0"
-                 id="text0"
-                 sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> b3 </tspan>
-           </text>
-           
-           <rect style="fill:#aaffaa;
-                        stroke:#00ff00;
+           <rect style="fill:#ff9498;
+                        stroke:#C44E52;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
@@ -429,31 +249,18 @@
                <tspan sodipodi:role="line" id="tspan0"> b2 </tspan>
            </text>
            
-           <path style="fill:none;
-                 stroke:#000000;
-                 stroke-width:5.0;
-                 stroke-linecap:butt;
-                 stroke-linejoin:miter;
-                 stroke-opacity:1.0;
-                 marker-end:url(#fullmarker);
-                 stroke-miterlimit:4;
-                 stroke-dasharray:none"
-                 d="M 631.0,-220.0 631.0,-121.2"
-                 id="path2985"
-                 inkscape:connector-curvature="0" />
-           
-           <rect style="fill:#dddddd;
-                        stroke:#000000;
+           <rect style="fill:#9beeae;
+                        stroke:#55A868;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
                  id="rect0"
-                 width="139.5"
+                 width="62.0"
                  height="60.0"
-                 x="561.25"
-                 y="-250.0"
-                 ry="0.0" />
+                 x="360.0"
+                 y="0.0"
+                 ry="10.0" />
            <text xml:space="preserve"
                  style="font-size:25.5px;
                         font-style:normal;
@@ -465,38 +272,25 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="561.25"
-                 y="-210.0"
+                 x="360.0"
+                 y="40.0"
                  id="text0"
                  sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> feature </tspan>
+               <tspan sodipodi:role="line" id="tspan0"> m1 </tspan>
            </text>
            
-           <path style="fill:none;
-                 stroke:#000000;
-                 stroke-width:5.0;
-                 stroke-linecap:butt;
-                 stroke-linejoin:miter;
-                 stroke-opacity:1.0;
-                 marker-end:url(#fullmarker);
-                 stroke-miterlimit:4;
-                 stroke-dasharray:none"
-                 d="M 391.0,280.0 391.0,181.2"
-                 id="path2985"
-                 inkscape:connector-curvature="0" />
-           
-           <rect style="fill:#dddddd;
-                        stroke:#000000;
+           <rect style="fill:#92b8f6;
+                        stroke:#4C72B0;
                         stroke-width:2.5;
                         stroke-miterlimit:4;
                         stroke-opacity:1.0;
                         stroke-dasharray:none"
                  id="rect0"
-                 width="124.0"
+                 width="62.0"
                  height="60.0"
-                 x="329.0"
-                 y="250.0"
-                 ry="0.0" />
+                 x="480.0"
+                 y="-120.0"
+                 ry="10.0" />
            <text xml:space="preserve"
                  style="font-size:25.5px;
                         font-style:normal;
@@ -508,11 +302,131 @@
                         fill-opacity:1.0;
                         stroke:none;
                         font-family:DejaVu Sans Mono"
-                 x="329.0"
-                 y="290.0"
+                 x="480.0"
+                 y="-80.0"
                  id="text0"
                  sodipodi:linespacing="125%">
-               <tspan sodipodi:role="line" id="tspan0"> branch </tspan>
+               <tspan sodipodi:role="line" id="tspan0"> x1 </tspan>
+           </text>
+           
+           <rect style="fill:#92b8f6;
+                        stroke:#4C72B0;
+                        stroke-width:2.5;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 id="rect0"
+                 width="62.0"
+                 height="60.0"
+                 x="600.0"
+                 y="-120.0"
+                 ry="10.0" />
+           <text xml:space="preserve"
+                 style="font-size:25.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="600.0"
+                 y="-80.0"
+                 id="text0"
+                 sodipodi:linespacing="125%">
+               <tspan sodipodi:role="line" id="tspan0"> x2 </tspan>
+           </text>
+           
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
+                        stroke-width:2.5;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 id="rect0"
+                 width="62.0"
+                 height="60.0"
+                 x="120.0"
+                 y="0.0"
+                 ry="10.0" />
+           <text xml:space="preserve"
+                 style="font-size:25.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="120.0"
+                 y="40.0"
+                 id="text0"
+                 sodipodi:linespacing="125%">
+               <tspan sodipodi:role="line" id="tspan0"> c2 </tspan>
+           </text>
+           
+           <rect style="fill:#ff9498;
+                        stroke:#C44E52;
+                        stroke-width:2.5;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 id="rect0"
+                 width="62.0"
+                 height="60.0"
+                 x="360.0"
+                 y="120.0"
+                 ry="10.0" />
+           <text xml:space="preserve"
+                 style="font-size:25.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="360.0"
+                 y="160.0"
+                 id="text0"
+                 sodipodi:linespacing="125%">
+               <tspan sodipodi:role="line" id="tspan0"> b3 </tspan>
+           </text>
+           
+           <rect style="fill:#c7b8f8;
+                        stroke:#8172B2;
+                        stroke-width:2.5;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 id="rect0"
+                 width="62.0"
+                 height="60.0"
+                 x="0.0"
+                 y="0.0"
+                 ry="10.0" />
+           <text xml:space="preserve"
+                 style="font-size:25.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="0.0"
+                 y="40.0"
+                 id="text0"
+                 sodipodi:linespacing="125%">
+               <tspan sodipodi:role="line" id="tspan0"> c1 </tspan>
            </text>
            
            <path style="fill:none;
@@ -606,6 +520,49 @@
                  stroke-width:5.0;
                  stroke-linecap:butt;
                  stroke-linejoin:miter;
+                 stroke-opacity:1.0;
+                 marker-end:url(#fullmarker);
+                 stroke-miterlimit:4;
+                 stroke-dasharray:none"
+                 d="M 391.0,280.0 391.0,181.2"
+                 id="path2985"
+                 inkscape:connector-curvature="0" />
+           
+           <rect style="fill:#dddddd;
+                        stroke:#000000;
+                        stroke-width:2.5;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 id="rect0"
+                 width="124.0"
+                 height="60.0"
+                 x="329.0"
+                 y="250.0"
+                 ry="0.0" />
+           <text xml:space="preserve"
+                 style="font-size:25.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="329.0"
+                 y="290.0"
+                 id="text0"
+                 sodipodi:linespacing="125%">
+               <tspan sodipodi:role="line" id="tspan0"> branch </tspan>
+           </text>
+           
+           <path style="fill:none;
+                 stroke:#000000;
+                 stroke-width:5.0;
+                 stroke-linecap:butt;
+                 stroke-linejoin:miter;
                  stroke-opacity:0.2;
                  marker-end:url(#ghostmarker);
                  stroke-miterlimit:4;
@@ -642,6 +599,49 @@
                  id="text0"
                  sodipodi:linespacing="125%">
                <tspan sodipodi:role="line" id="tspan0"> branch </tspan>
+           </text>
+           
+           <path style="fill:none;
+                 stroke:#000000;
+                 stroke-width:5.0;
+                 stroke-linecap:butt;
+                 stroke-linejoin:miter;
+                 stroke-opacity:1.0;
+                 marker-end:url(#fullmarker);
+                 stroke-miterlimit:4;
+                 stroke-dasharray:none"
+                 d="M 631.0,-220.0 631.0,-121.2"
+                 id="path2985"
+                 inkscape:connector-curvature="0" />
+           
+           <rect style="fill:#dddddd;
+                        stroke:#000000;
+                        stroke-width:2.5;
+                        stroke-miterlimit:4;
+                        stroke-opacity:1.0;
+                        stroke-dasharray:none"
+                 id="rect0"
+                 width="139.5"
+                 height="60.0"
+                 x="561.25"
+                 y="-250.0"
+                 ry="0.0" />
+           <text xml:space="preserve"
+                 style="font-size:25.5px;
+                        font-style:normal;
+                        font-weight:normal;
+                        line-height:125%%;
+                        letter-spacing:0px;
+                        word-spacing:0px;
+                        fill:#000000;
+                        fill-opacity:1.0;
+                        stroke:none;
+                        font-family:DejaVu Sans Mono"
+                 x="561.25"
+                 y="-210.0"
+                 id="text0"
+                 sodipodi:linespacing="125%">
+               <tspan sodipodi:role="line" id="tspan0"> feature </tspan>
            </text>
            
                 </g>
