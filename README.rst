@@ -20,11 +20,13 @@ Example
 
                        [feature]
                         |
+                        v
                  x1-----x2
                 /
   c1----c2----m1----c3----c4
-    \        /            |
-     b1----b2----b3      [master,HEAD]
+    \        /            ^
+     b1----b2----b3       |
+     ^           ^       [master,HEAD]
      |           |
     [_branch]   [branch]
 
