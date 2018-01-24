@@ -61,8 +61,6 @@ Installation
 
   $ pip install gitink
 
-Alternately you can replace master with a branch or a tag.
-
 
 How do the colors work?
 -----------------------
