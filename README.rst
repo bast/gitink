@@ -57,12 +57,9 @@ Available options
 Installation
 ------------
 
-As the software is not quite finished it isn’t in PyPI yet. You can
-install it with pip by using
-
 .. code:: shell
 
-  $ pip install git+https://github.com/bast/gitink@master
+  $ pip install gitink
 
 Alternately you can replace master with a branch or a tag.
 
