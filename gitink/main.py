@@ -270,6 +270,8 @@ def main(scale, in_file, time_direction):
                 tag_opacity = 1.0
                 fill_color = '#dddddd'
                 _tag = tag
+                if _tag == "HEAD":
+                    fill_color = '#ffe600'
                 ghost = False
             s_svg += draw_arrow(x1=center_tag[0],
                                 y1=center_tag[1],
