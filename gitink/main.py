@@ -1,6 +1,4 @@
 import sys
-import re
-from collections import namedtuple
 from ascii2graph import graph
 from .color import get_color
 from .svg import draw_box, draw_line, draw_arrow, embed_svg, get_box_dims
