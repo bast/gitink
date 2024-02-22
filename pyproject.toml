@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "gitink"
+authors = [
+    {name = "Radovan Bast", email = "radovan.bast@uit.no"},
+]
+dynamic = ["version", "description"]
+classifiers = [
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+]
+dependencies = [
+    "click",
+    "ascii2graph",
+]
+
+[project.urls]
+Home = "https://github.com/bast/gitink"
+
+[project.scripts]
+gitink = "gitink.cli:cli"
