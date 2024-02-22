@@ -1,3 +1,4 @@
 pytest
 flit
 vulture
+ascii2graph
