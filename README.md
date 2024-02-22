@@ -27,7 +27,7 @@ c1----c2----m1----c3----c4
 ```
 
 ```bash
-$ gitink --time-direction=90 --in-file=example.txt | display
+$ gitink --in-file=example.txt | display
 ```
 
 This produces (display command requires
@@ -47,7 +47,8 @@ Options:
   --scale FLOAT             Scale sizes by this factor.
   --in-file TEXT            ASCII file to convert.
   --time-direction INTEGER  Direction of the time arrow (0, 90, 180, or 270).
-  --help
+                            Default: 90 (right).
+  --help                    Show this message and exit.
 ```
 
 
