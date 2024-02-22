@@ -3,10 +3,7 @@ gitink: ASCII to SVG Git log graph visualizer.
 """
 
 
-from .version import version_info, __version__
-from .main import main
+__version__ = "0.2.1"
 
-__all__ = [
-    "version_info",
-    "main",
-]
+
+from .main import main
