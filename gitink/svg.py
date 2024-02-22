@@ -9,7 +9,7 @@ def embed_svg(text, bbox):
     height = y_max - y_min
     width = x_max - x_min
 
-    return '''<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    return """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
               <!-- Created with GitInk -->
               <svg
                  xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -59,22 +59,13 @@ def embed_svg(text, bbox):
                    id="layer1">
                    {text}
                 </g>
-              </svg>'''.format(width=width,
-                               height=height,
-                               translate_x=-x_min,
-                               translate_y=-y_min,
-                               text=text)
+              </svg>""".format(
+        width=width, height=height, translate_x=-x_min, translate_y=-y_min, text=text
+    )
 
 
-def draw_line(x1,
-              y1,
-              x2,
-              y2,
-              scale,
-              color,
-              opacity):
-
-    return '''
+def draw_line(x1, y1, x2, y2, scale, color, opacity):
+    return """
            <line x1="{x1}"
                  y1="{y1}"
                  x2="{x2}"
@@ -82,31 +73,20 @@ def draw_line(x1,
                  style="stroke:{color};
                         stroke-width:{width};
                         stroke-opacity:{opacity}" />
-           '''.format(x1=x1,
-                      y1=y1,
-                      x2=x2,
-                      y2=y2,
-                      color=color,
-                      width=scale * 2.5,
-                      opacity=opacity)
+           """.format(
+        x1=x1, y1=y1, x2=x2, y2=y2, color=color, width=scale * 2.5, opacity=opacity
+    )
 
 
-def draw_arrow(x1,
-               y1,
-               x2,
-               y2,
-               scale,
-               color,
-               ghost):
-
+def draw_arrow(x1, y1, x2, y2, scale, color, ghost):
     if ghost:
         opacity = 0.2
-        marker = 'ghostmarker'
+        marker = "ghostmarker"
     else:
         opacity = 1.0
-        marker = 'fullmarker'
+        marker = "fullmarker"
 
-    return '''
+    return """
            <path style="fill:none;
                  stroke:{color};
                  stroke-width:{width};
@@ -118,25 +98,19 @@ def draw_arrow(x1,
                  stroke-dasharray:none"
                  d="M {x1},{y1} {x2},{y2}"
                  inkscape:connector-curvature="0" />
-           '''.format(x1=x1,
-                      y1=y1,
-                      x2=x2,
-                      y2=y2,
-                      color=color,
-                      width=scale * 2.5,
-                      opacity=opacity,
-                      marker=marker)
+           """.format(
+        x1=x1,
+        y1=y1,
+        x2=x2,
+        y2=y2,
+        color=color,
+        width=scale * 2.5,
+        opacity=opacity,
+        marker=marker,
+    )
 
 
-def draw_box(text,
-             x,
-             y,
-             scale,
-             stroke_color,
-             fill_color,
-             opacity,
-             rounded):
-
+def draw_box(text, x, y, scale, stroke_color, fill_color, opacity, rounded):
     width, height = get_box_dims(scale, text)
     text_x = x + scale * 7.5
     text_y = y + scale * 12.5 + 8.0
@@ -147,7 +121,7 @@ def draw_box(text,
     font_size = scale * 12.5
     stroke_width = scale * 1.25
 
-    return '''
+    return """
            <rect style="fill:{fill_color};
                         stroke:{stroke_color};
                         stroke-width:{stroke_width};
@@ -171,16 +145,18 @@ def draw_box(text,
                         font-family:DejaVu Sans Mono"
                  x="{text_x}"
                  y="{text_y}">{text}</text>
-           '''.format(fill_color=fill_color,
-                      stroke_color=stroke_color,
-                      stroke_width=stroke_width,
-                      width=width,
-                      height=height,
-                      x=x,
-                      y=y,
-                      text_x=text_x,
-                      text_y=text_y,
-                      rounding=rounding,
-                      font_size=font_size,
-                      opacity=opacity,
-                      text=text)
+           """.format(
+        fill_color=fill_color,
+        stroke_color=stroke_color,
+        stroke_width=stroke_width,
+        width=width,
+        height=height,
+        x=x,
+        y=y,
+        text_x=text_x,
+        text_y=text_y,
+        rounding=rounding,
+        font_size=font_size,
+        opacity=opacity,
+        text=text,
+    )
