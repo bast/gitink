@@ -26,4 +26,4 @@ jobs:
       run: pip install -r requirements.txt
     - name: Run tests
       run: |
-        pytest -vv -s gitink/*
+        pytest -vv -s gitink/test.py
