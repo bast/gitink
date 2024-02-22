@@ -1,11 +1,11 @@
-[origin/master]-->c4      a1<--[feature,HEAD]
-                    \    /
-                     \  /
-                      c3
-                      |
-                      |
-                      c2
-                      |
-                      |
-                      |
-                      c1
+[origin/main]-->c4      a1<--[feature,HEAD]
+                  \    /
+                   \  /
+                    c3
+                    |
+                    |
+                    c2
+                    |
+                    |
+                    |
+                    c1

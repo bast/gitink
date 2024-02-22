@@ -21,7 +21,7 @@ $ cat example.txt
 c1----c2----m1----c3----c4
   \        /            ^
    b1----b2----b3       |
-   ^           ^       [master,HEAD]
+   ^           ^       [main,HEAD]
    |           |
   [_branch]   [branch]
 ```
