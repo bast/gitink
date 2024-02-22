@@ -47,7 +47,7 @@ Options:
   --scale FLOAT             Scale sizes by this factor.
   --in-file TEXT            ASCII file to convert.
   --time-direction INTEGER  Direction of the time arrow (0, 90, 180, or 270).
-  --help                    Show this message and exit.
+  --help
 ```
 
 
