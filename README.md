@@ -33,7 +33,7 @@ $ gitink --time-direction=90 --in-file=example.txt | display
 This produces (display command requires
 [imagemagick](https://www.imagemagick.org)):
 
-![git log graph example](img/example.jpg)
+![git log graph example](img/example.svg)
 
 
 ## Available options
