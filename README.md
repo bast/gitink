@@ -1,5 +1,6 @@
 [![image](https://github.com/bast/gitink/workflows/Test/badge.svg)](https://github.com/bast/gitink/actions)
 [![image](https://img.shields.io/badge/license-%20MPL--v2.0-blue.svg)](LICENSE)
+[![PyPI badge](https://badge.fury.io/py/gitink.svg)](https://badge.fury.io/py/gitink)
 
 
 # gitink
