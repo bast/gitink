@@ -15,6 +15,7 @@ dependencies = [
     "click",
     "ascii2graph",
 ]
+readme = "README.md"
 
 [project.urls]
 Home = "https://github.com/bast/gitink"
