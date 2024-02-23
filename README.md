@@ -63,3 +63,12 @@ $ pip install gitink
 
 Coloring is done according to the first character of the commit hash.  Other
 suggestions welcome.
+
+
+## Other projects that are interesting
+
+- [Asciio](https://nkh.github.io/P5-App-Asciio/): this project has a [Git
+  mode](https://nkh.github.io/P5-App-Asciio/modes/git.html) and can be
+  scripted [using the
+  API](https://nkh.github.io/P5-App-Asciio/for_developers/scripting.html) to
+  generate graphs.
